@@ -1,0 +1,16 @@
+type BankAccount {
+	id: ID!,
+	name: String,
+	address: String,
+	balance: String,
+	dateOfBirth: String
+}
+
+type Query {
+	bankAccounts(count: Int):[BankAccount]
+	bankAccount(id: ID):BankAccount
+}
+
+type Mutation {
+	createBankAccount(name: String!, address: String!, balance: String, dateOfBirth: String):BankAccount
+}
