@@ -1,0 +1,6 @@
+mutation {
+    createBankAccount(name: "Customer11", address: "Utrecht", balance: "2000", dateOfBirth: "1997-11-16")
+    {
+        id
+    }
+}

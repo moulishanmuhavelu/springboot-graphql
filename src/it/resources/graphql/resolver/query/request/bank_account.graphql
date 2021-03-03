@@ -1,0 +1,6 @@
+query {
+    bankAccount (id: 1) {
+        id,
+        name
+    }
+}
