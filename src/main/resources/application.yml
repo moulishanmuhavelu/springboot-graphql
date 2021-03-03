@@ -1,0 +1,24 @@
+
+spring:
+  application:
+    name: sample-graphql
+  servlet:
+    multipart:
+      max-file-size: 2MB
+
+server:
+  http2:
+    enabled: true
+
+graphql:
+  servlet:
+    maxQueryDepth: 100
+    exception-handlers-enabled: true
+    tracingEnabled: false
+  playground:
+    headers:
+      Authorization: Bearer TOKEN
+      user_id: IDP|Mouli
+
+voyager:
+  enabled: true

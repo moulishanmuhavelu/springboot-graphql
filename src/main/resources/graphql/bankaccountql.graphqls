@@ -13,4 +13,5 @@ type Query {
 
 type Mutation {
 	createBankAccount(name: String!, address: String!, balance: String, dateOfBirth: String):BankAccount
+	uploadFile: ID
 }
